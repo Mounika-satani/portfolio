@@ -45,7 +45,7 @@ export function ContactSection() {
             <div>
               <h3 className="text-2xl font-semibold mb-6">Get In Touch</h3>
               <p className="text-foreground/80 leading-relaxed mb-8">
-                Whether you're looking for a senior full-stack developer to join your team, need help building
+                Whether you're looking for a MERN stack or React Native developer to join your team, need help building
                 scalable applications, or want to discuss a project idea, I'd love to hear from you.
               </p>
             </div>
@@ -57,8 +57,8 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Email</h4>
-                  <a href="mailto:kaparevanthkumarreddy@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
-                    kaparevanthkumarreddy@gmail.com
+                  <a href="mailto:satanivaishnavamounika@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                    satanivaishnavamounika@gmail.com
                   </a>
                 </div>
               </div>
@@ -69,8 +69,8 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Phone</h4>
-                  <a href="tel:+919542269621" className="text-muted-foreground hover:text-primary transition-colors">
-                    +91 9542269621
+                  <a href="tel:+919912526055" className="text-muted-foreground hover:text-primary transition-colors">
+                    +91 9912526055
                   </a>
                 </div>
               </div>
@@ -92,19 +92,19 @@ export function ContactSection() {
               <ul className="space-y-2 text-foreground/80">
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">▸</span>
-                  <span>Senior full-stack development roles</span>
+                  <span>MERN stack development roles</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">▸</span>
-                  <span>Backend engineering positions</span>
+                  <span>React Native mobile engineering positions</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">▸</span>
-                  <span>Cloud and infrastructure projects</span>
+                  <span>Full-stack application development</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">▸</span>
-                  <span>Remote or hybrid work arrangements</span>
+                  <span>Collaborative and innovative teams</span>
                 </li>
               </ul>
             </div>

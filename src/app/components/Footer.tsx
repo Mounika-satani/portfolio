@@ -10,13 +10,13 @@ export function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
             <p className="text-muted-foreground">
-              © {currentYear} Kapa Revanth Kumar Reddy. Built with React & Tailwind CSS.
+              © {currentYear} S V Mounika. Built with React & Tailwind CSS.
             </p>
           </div>
 
           <div className="flex items-center gap-6">
             <a
-              href="https://github.com/k-revanth-reddy"
+              href="https://github.com/Mounika-satani"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -24,7 +24,7 @@ export function Footer() {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com/in/revanth-reddy-64739023b"
+              href="https://www.linkedin.com/in/svmounika/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -32,7 +32,7 @@ export function Footer() {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="mailto:kaparevanthkumarreddy@gmail.com"
+              href="mailto:satanivaishnavamounika@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail className="w-5 h-5" />

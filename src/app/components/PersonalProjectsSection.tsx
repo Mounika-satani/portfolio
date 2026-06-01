@@ -4,6 +4,7 @@ import { ChevronLeft, ChevronRight, Github, ExternalLink } from 'lucide-react';
 interface Project {
     title: string;
     githubLink: string;
+    liveLink?: string;
     techStack: string[];
     category: string;
 }
@@ -13,46 +14,46 @@ export function PersonalProjectsSection() {
 
     const projects: Project[] = [
         {
-            title: 'Smart IoT Door Security System',
-            githubLink: 'https://github.com/k-revanth-reddy/door-authorisation-.git',
-            techStack: ['Python', 'AWS', 'IoT', 'Face Recognition'],
-            category: 'IoT & Security'
+            title: 'THELAUNDRYGUYZ',
+            githubLink: '',
+            liveLink: 'https://www.thelaundryguyz.com/',
+            techStack: ['React.js', 'Node.js', 'PostgreSQL'],
+            category: 'Service Management Platform'
         },
         {
-            title: 'Interactive Simon Memory Game',
-            githubLink: 'https://github.com/k-revanth-reddy/simon-game.git',
-            techStack: ['HTML', 'CSS', 'JavaScript'],
-            category: 'Web Game'
+            title: 'DIGITAZ.US',
+            githubLink: '',
+            liveLink: 'https://www.digitaz.us/',
+            techStack: ['React.js', 'Tailwind CSS', 'Vite'],
+            category: 'Agency Portfolio'
         },
         {
-            title: 'Netflix UI Clone',
-            githubLink: 'https://github.com/k-revanth-reddy/netflix-clone-project.git',
-            techStack: ['HTML', 'CSS', 'JavaScript'],
-            category: 'Frontend Clone'
+            title: 'TECHRUITZ',
+            githubLink: '',
+            liveLink: 'https://www.techruitz.com/',
+            techStack: ['React.js', 'Tailwind CSS', 'Framer Motion'],
+            category: 'Tech Recruitment Platform'
         },
         {
-            title: 'Sports Facility Booking System',
-            githubLink: 'https://github.com/k-revanth-reddy/Sports-Arena-booking-using-flask.git',
-            techStack: ['Python', 'Flask', 'MongoDB', 'HTML', 'CSS', 'JavaScript'],
-            category: 'Full-Stack Web App'
+            title: 'CLOUDCREST',
+            githubLink: '',
+            liveLink: 'https://cloudcrest-plum.vercel.app/',
+            techStack: ['TypeScript', 'Tailwind CSS', 'React.js', 'Vite'],
+            category: 'Cloud Services Landing Page'
         },
         {
-            title: 'Campus Cafeteria Management Platform',
-            githubLink: 'https://github.com/k-revanth-reddy/Cafeteria-Canteen-management-project-MERN-.git',
-            techStack: ['MongoDB', 'Express.js', 'React.js', 'Node.js'],
-            category: 'MERN Stack'
+            title: 'STUDYSPHERE',
+            githubLink: '',
+            liveLink: 'https://studyspherenew.vercel.app/',
+            techStack: ['React.js', 'Firebase', 'React-Suite', 'Bootstrap'],
+            category: 'Real-time Academic Platform'
         },
         {
-            title: 'AI-Powered Travel Planner',
-            githubLink: 'https://github.com/k-revanth-reddy/travel-planner-java-spring.git',
-            techStack: ['Java', 'Spring Boot', 'Thymeleaf', 'MySQL', 'HTML', 'CSS'],
-            category: 'Java Full-Stack'
-        },
-        {
-            title: 'Real-Time Auction Marketplace',
-            githubLink: 'https://github.com/k-revanth-reddy/Auction-project-MERN-stack.git',
-            techStack: ['MongoDB', 'Express.js', 'React.js', 'Node.js'],
-            category: 'MERN Stack'
+            title: 'YUMLIBRARY',
+            githubLink: '',
+            liveLink: 'https://jsproject-nine.vercel.app/',
+            techStack: ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'Firebase'],
+            category: 'Recipe Discovery Web App'
         }
     ];
 
@@ -105,10 +106,10 @@ export function PersonalProjectsSection() {
         <section id="personal-projects" className="py-24 px-6 lg:px-12 bg-secondary/30">
             <div className="max-w-7xl mx-auto">
                 <div className="mb-16 text-center">
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6">Personal Projects</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold mb-6">Featured Websites</h2>
                     <div className="w-20 h-1 bg-primary rounded-full mb-8 mx-auto"></div>
                     <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                        Explore my personal projects showcasing diverse technologies and creative solutions
+                        A collection of professionally developed web applications and platforms
                     </p>
                 </div>
 
@@ -137,30 +138,34 @@ export function PersonalProjectsSection() {
                             <div
                                 key={index}
                                 className={`transition-all duration-500 ${position === 'center'
-                                        ? 'w-full lg:w-[500px] scale-100 lg:scale-110 z-20 opacity-100'
-                                        : 'hidden lg:block w-[350px] scale-90 opacity-50 hover:opacity-75'
+                                    ? 'w-full lg:w-[500px] scale-100 lg:scale-110 z-20 opacity-100'
+                                    : 'hidden lg:block w-[350px] scale-90 opacity-50 hover:opacity-75'
                                     }`}
                             >
                                 <div className={`bg-card border rounded-2xl p-6 lg:p-8 transition-all duration-300 ${position === 'center'
-                                        ? 'border-primary/50 shadow-2xl shadow-primary/20'
-                                        : 'border-border hover:border-primary/30'
+                                    ? 'border-primary/50 shadow-2xl shadow-primary/20'
+                                    : 'border-border hover:border-primary/30'
                                     }`}>
                                     {/* Project Header */}
                                     <div className="mb-6">
                                         <div className="flex items-start justify-between mb-4">
-                                            <h3 className={`font-bold flex-1 ${position === 'center' ? 'text-2xl lg:text-3xl' : 'text-xl lg:text-2xl'
+                                            <h3 className={`font-bold flex-1 ${position === 'center' ? 'text-2xl lg:text-3xl text-primary' : 'text-xl lg:text-2xl'
                                                 }`}>
                                                 {project.title}
                                             </h3>
-                                            <a
-                                                href={project.githubLink}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="ml-4 p-2 bg-primary/10 hover:bg-primary/20 rounded-lg transition-colors"
-                                                aria-label={`View ${project.title} on GitHub`}
-                                            >
-                                                <Github className={position === 'center' ? 'w-6 h-6 text-primary' : 'w-5 h-5 text-primary'} />
-                                            </a>
+                                            <div className="flex gap-2 ml-4">
+                                                {project.liveLink && (
+                                                    <a
+                                                        href={project.liveLink}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="p-2 bg-primary/10 hover:bg-primary/20 rounded-lg transition-colors border border-primary/20"
+                                                        aria-label={`View ${project.title} Live`}
+                                                    >
+                                                        <ExternalLink className={position === 'center' ? 'w-5 h-5 text-primary' : 'w-4 h-4 text-primary'} />
+                                                    </a>
+                                                )}
+                                            </div>
                                         </div>
                                         <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm rounded-full border border-primary/20">
                                             {project.category}
@@ -169,14 +174,14 @@ export function PersonalProjectsSection() {
 
                                     {/* Tech Stack */}
                                     <div className="mb-6">
-                                        <h4 className="text-xs font-semibold text-muted-foreground mb-3 uppercase tracking-wide">
+                                        <h4 className="text-xs font-semibold text-muted-foreground mb-3 uppercase tracking-wide px-1">
                                             Tech Stack
                                         </h4>
                                         <div className="flex flex-wrap gap-2">
                                             {project.techStack.map((tech, i) => (
                                                 <span
                                                     key={i}
-                                                    className={`px-2.5 py-1 rounded-lg text-xs font-medium border ${getTechIcon(tech)}`}
+                                                    className={`px-3 py-1 rounded-lg text-xs font-medium border shadow-sm ${getTechIcon(tech)}`}
                                                 >
                                                     {tech}
                                                 </span>
@@ -184,17 +189,21 @@ export function PersonalProjectsSection() {
                                         </div>
                                     </div>
 
-                                    {/* GitHub Link */}
+                                    {/* Links Footer */}
                                     {position === 'center' && (
-                                        <a
-                                            href={project.githubLink}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium"
-                                        >
-                                            <ExternalLink className="w-4 h-4" />
-                                            View on GitHub
-                                        </a>
+                                        <div className="flex gap-4 pt-2">
+                                            {project.liveLink && (
+                                                <a
+                                                    href={project.liveLink}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-xl hover:opacity-90 transition-all font-semibold shadow-lg shadow-primary/20"
+                                                >
+                                                    <ExternalLink className="w-4 h-4" />
+                                                    Visit Website
+                                                </a>
+                                            )}
+                                        </div>
                                     )}
                                 </div>
                             </div>
@@ -208,8 +217,8 @@ export function PersonalProjectsSection() {
                                 key={index}
                                 onClick={() => setCurrentIndex(index)}
                                 className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentIndex
-                                        ? 'bg-primary w-8'
-                                        : 'bg-muted-foreground/30 hover:bg-muted-foreground/50'
+                                    ? 'bg-primary w-8'
+                                    : 'bg-muted-foreground/30 hover:bg-muted-foreground/50'
                                     }`}
                                 aria-label={`Go to project ${index + 1}`}
                             />

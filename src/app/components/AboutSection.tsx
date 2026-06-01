@@ -6,17 +6,17 @@ export function AboutSection() {
     {
       icon: Code2,
       title: 'Full-Stack Development',
-      description: 'Expert in building end-to-end applications using MERN stack. Architected Form Builder Module and LMS platforms with React, Redux, Node.js, and MongoDB. Reduced development time by 30% through reusable component libraries.',
+      description: 'Experienced in developing web and mobile applications using MERN stack and React Native. Built platforms like LEADITOAI and THELAUNDRYGUYZ with seamless backend integration.',
     },
     {
       icon: Cloud,
-      title: 'Cloud Infrastructure',
-      description: 'Hands-on experience deploying and managing production applications on AWS (S3, DynamoDB, EC2, IAM). Reduced operational costs by 25% through optimized cloud architecture and infrastructure design.',
+      title: 'Backend & APIs',
+      description: 'Skilled in designing RESTful APIs using Node.js and Express.js with PostgreSQL database management. Implemented secure authentication and payment gateway integrations.',
     },
     {
       icon: Database,
-      title: 'Performance Optimization',
-      description: 'Proven track record of optimizing database queries and API performance. Achieved 40% reduction in response times and 50% improvement in query performance through strategic caching and optimization.',
+      title: 'Cross-Platform Apps',
+      description: 'Hands-on experience in building and deploying React Native applications to the Google Play Store, handling features like Firebase OTP and real-time data updates.',
     },
   ];
 
@@ -30,50 +30,68 @@ export function AboutSection() {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
               <p>
-                I'm a <span className="text-primary font-semibold">Senior Full-Stack Developer</span> with 2 years of
-                experience designing and building scalable web applications. I specialize in taking full ownership of
-                product features from architecture to deployment, delivering measurable business impact at every stage.
+                I'm a <span className="text-primary font-semibold">MERN Stack and React Native Developer</span> with
+                hands-on experience in building scalable web and mobile applications. I specialize in backend integration,
+                RESTful API design, and delivering high-quality cross-platform user experiences.
               </p>
               <p>
-                Currently at <span className="text-foreground font-semibold">Codegnan IT Solutions</span>, I architected
-                and developed the complete Form Builder Module using React, Redux, and SurveyJS, replacing Google Forms
-                with a custom internal platform. Previously at <span className="text-foreground font-semibold">MakeSkillled</span>,
-                I built scalable backend APIs for an LMS platform and developed a full-stack hackathon platform serving real users.
+                Currently at <span className="text-foreground font-semibold">Weiteredge Technology Pvt. Ltd</span>, I've
+                contributed to government-scale projects like Greensip and developed comprehensive lead management and
+                laundry platforms. I have a strong foundation in <span className="text-foreground font-semibold">B.Tech
+                  Computer Science and Engineering</span> with an 8.55 CGPA.
               </p>
               <p>
-                My approach focuses on <span className="text-primary font-semibold">clean architecture, performance optimization,
-                  and delivering results</span>. I've consistently achieved significant improvements: 40% better operational efficiency,
-                35% reduction in manual effort, and 30% faster development cycles through reusable components and best practices.
+                My focus is on <span className="text-primary font-semibold">seamless synchronization, secure authentication,
+                  and performance optimization</span>. I'm passionate about continuous learning and implementing modern
+                technologies to solve real-world problems effectively.
               </p>
             </div>
 
             <div className="space-y-6">
               <div>
+                <h3 className="text-xl font-semibold mb-4">Education</h3>
+                <div className="bg-card border border-border rounded-xl p-4 mb-6">
+                  <h4 className="font-bold text-primary">Bachelor of Technology (B.Tech)</h4>
+                  <p className="text-sm text-muted-foreground mb-1">CSE | 8.55 CGPA</p>
+                  <p className="text-foreground/80">Brindavan Institute of Technology and Science</p>
+                  <p className="text-sm text-muted-foreground">2020 - 2024 | Kurnool</p>
+                </div>
+
+                <div className="grid grid-cols-2 gap-4 mb-6">
+                  <div>
+                    <h3 className="text-xl font-semibold mb-4">Achievements</h3>
+                    <div className="bg-card border border-border rounded-xl p-4">
+                      <p className="font-bold text-primary">Winner</p>
+                      <p className="text-sm">SAMSKRUTHI-2023 Ideathon</p>
+                      <p className="text-xs text-muted-foreground mt-1">First place for innovative solution at Guntur.</p>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-4">Certificates</h3>
+                    <div className="bg-card border border-border rounded-xl p-4 text-center h-full flex flex-col justify-center">
+                      <p className="font-bold text-primary text-sm">Python 101 for Data Science</p>
+                      <p className="text-xs text-muted-foreground mt-1">IBM Cognitive Class</p>
+                    </div>
+                  </div>
+                </div>
+
                 <h3 className="text-xl font-semibold mb-4">Technical Expertise</h3>
                 <ul className="space-y-3 text-foreground/80">
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">▸</span>
-                    <span>End-to-end product ownership from design to deployment</span>
+                    <span>Cross-platform mobile apps with React Native</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">▸</span>
-                    <span>Scalable backend systems with Node.js and Express</span>
+                    <span>Full-stack web applications with MERN stack</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">▸</span>
-                    <span>Modern frontend development with React and Redux</span>
+                    <span>RESTful API development with Node.js & PostgreSQL</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">▸</span>
-                    <span>Cloud deployment and infrastructure on AWS</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary mt-1">▸</span>
-                    <span>Database design and performance optimization</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary mt-1">▸</span>
-                    <span>Delivering measurable business impact and ROI</span>
+                    <span>Firebase and JWT Authentication integration</span>
                   </li>
                 </ul>
               </div>

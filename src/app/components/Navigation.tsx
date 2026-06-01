@@ -31,7 +31,7 @@ export function Navigation() {
             onClick={() => scrollToSection('hero')}
             className="text-xl font-semibold hover:text-primary transition-colors"
           >
-            KR
+            SVM
           </button>
 
           <div className="flex items-center gap-8">
@@ -48,6 +48,12 @@ export function Navigation() {
               Projects
             </button>
             <button
+              onClick={() => scrollToSection('personal-projects')}
+              className="text-foreground/70 hover:text-primary transition-colors"
+            >
+              Websites
+            </button>
+            <button
               onClick={() => scrollToSection('experience')}
               className="text-foreground/70 hover:text-primary transition-colors"
             >
@@ -55,7 +61,7 @@ export function Navigation() {
             </button>
             <div className="flex items-center gap-4">
               <a
-                href="https://github.com/k-revanth-reddy"
+                href="https://github.com/Mounika-satani"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 text-foreground/70 hover:text-primary transition-colors"
@@ -64,7 +70,7 @@ export function Navigation() {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com/in/revanth-reddy-64739023b"
+                href="https://www.linkedin.com/in/svmounika/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 text-foreground/70 hover:text-primary transition-colors"
@@ -73,7 +79,7 @@ export function Navigation() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="mailto:kaparevanthkumarreddy@gmail.com"
+                href="mailto:satanivaishnavamounika@gmail.com"
                 className="p-2 text-foreground/70 hover:text-primary transition-colors"
                 aria-label="Email"
               >

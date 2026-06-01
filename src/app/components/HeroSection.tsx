@@ -26,17 +26,17 @@ export function HeroSection() {
 
             <div>
               <h1 className="text-5xl md:text-7xl font-bold mb-4 leading-tight">
-                Kapa Revanth<br />Kumar Reddy
+                S V Mounika
               </h1>
 
               <h2 className="text-2xl md:text-3xl text-primary font-semibold mb-6">
-                Senior Full-Stack Developer
+                MERN Stack & React Native Developer
               </h2>
 
               <p className="text-lg md:text-xl text-foreground/80 max-w-xl leading-relaxed">
-                Senior Full-Stack Developer with 2 years of experience designing and building scalable web applications
-                using React, Node.js, MongoDB, and AWS. Proven ability to own end-to-end product features from architecture
-                to deployment.
+                Aspiring MERN Stack and React Native Developer with hands-on experience in building web and mobile applications
+                using React.js, React Native, Node.js, and PostgreSQL. Passionate about developing cross-platform applications
+                and continuously learning modern web technologies.
               </p>
             </div>
 
@@ -47,7 +47,7 @@ export function HeroSection() {
               <Button variant="outline" size="lg" onClick={() => scrollToSection('contact')}>
                 Get In Touch
               </Button>
-              <a href="/Revanth_Reddy_SFSD.pdf" download="Revanth_Reddy_Resume.pdf">
+              <a href="/S V Mounika.pdf" download="S V Mounika.pdf">
                 <Button variant="outline" size="lg">
                   <Download className="w-5 h-5" />
                   Download Resume
@@ -57,7 +57,7 @@ export function HeroSection() {
 
             <div className="flex flex-wrap items-center gap-6 pt-4">
               <a
-                href="https://linkedin.com/in/revanth-reddy-64739023b"
+                href="https://www.linkedin.com/in/svmounika/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -66,7 +66,7 @@ export function HeroSection() {
                 <Linkedin className="w-6 h-6" />
               </a>
               <a
-                href="https://github.com/k-revanth-reddy"
+                href="https://github.com/Mounika-satani"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -75,14 +75,14 @@ export function HeroSection() {
                 <Github className="w-6 h-6" />
               </a>
               <a
-                href="mailto:kaparevanthkumarreddy@gmail.com"
+                href="mailto:satanivaishnavamounika@gmail.com"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Email"
               >
                 <Mail className="w-6 h-6" />
               </a>
               <a
-                href="tel:+919542269621"
+                href="tel:+919912526055"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Phone"
               >
@@ -91,24 +91,30 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* Right Profile Image - Full Height Portrait */}
-          <div className="relative lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-1/2 flex items-end justify-end">
-            {/* Diagonal edge overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent lg:clip-diagonal z-10 pointer-events-none"></div>
+          {/* Right Profile Image */}
+          <div className="flex justify-center lg:justify-end items-center z-10">
+            <div className="relative w-72 h-96 md:w-80 md:h-[450px] lg:w-96 lg:h-[500px]">
+              {/* Decorative Background Elements */}
+              <div className="absolute -inset-4 bg-primary/10 rounded-[2.5rem] blur-2xl animate-pulse"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-[2rem] transform rotate-3"></div>
 
-            {/* Profile Image Container */}
-            <div className="relative w-full h-[600px] lg:h-full">
-              {/* Gradient fade at edges */}
-              <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent z-10 pointer-events-none"></div>
-              {/* Right edge fade to remove visible border */}
-              <div className="absolute inset-0 bg-gradient-to-l from-background via-transparent to-transparent z-10 pointer-events-none"></div>
+              {/* Image Container */}
+              <div className="relative h-full w-full rounded-[2rem] overflow-hidden border-2 border-primary/20 shadow-2xl shadow-primary/10 group">
+                <img
+                  src="/Mounika.jpeg"
+                  alt="S V Mounika - MERN Stack & React Native Developer"
+                  className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent opacity-60"></div>
+              </div>
 
-              {/* Actual Image */}
-              <img
-                src="/profile.png"
-                alt="Kapa Revanth Kumar Reddy - Senior Full-Stack Developer"
-                className="absolute bottom-0 right-0 h-full w-auto object-cover object-center"
-              />
+              {/* Floating Badge */}
+              <div className="absolute -bottom-6 -left-6 bg-card border border-border p-4 rounded-2xl shadow-xl hidden md:block animate-bounce">
+                <div className="flex items-center gap-3">
+                  <div className="w-3 h-3 bg-green-500 rounded-full animate-ping"></div>
+                  <span className="text-sm font-medium">Ready to Work</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

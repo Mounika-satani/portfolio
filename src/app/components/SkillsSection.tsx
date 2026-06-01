@@ -4,28 +4,28 @@ import { SkillBadge } from './SkillBadge';
 export function SkillsSection() {
   const skillCategories = [
     {
-      category: 'Frontend',
-      skills: ['React.js', 'Redux', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'Tailwind CSS', 'SurveyJS'],
+      category: 'Web Technologies',
+      skills: ['HTML5', 'CSS3', 'JavaScript (ES6+)'],
     },
     {
-      category: 'Backend',
-      skills: ['Node.js', 'Express.js', 'REST APIs', 'Authentication & Authorization'],
+      category: 'Libraries & Frameworks',
+      skills: ['React.js', 'React Native', 'Node.js', 'Express.js'],
     },
     {
       category: 'Databases',
-      skills: ['MongoDB', 'MySQL', 'DynamoDB'],
+      skills: ['MongoDB', 'PostgreSQL', 'Firebase (Realtime Database)'],
     },
     {
-      category: 'Cloud & DevOps',
-      skills: ['AWS S3', 'AWS EC2', 'AWS DynamoDB', 'Git', 'GitHub'],
+      category: 'Cloud & Deployment',
+      skills: ['AWS (EC2, S3)', 'Docker', 'Nginx', 'CI/CD', 'REST API'],
     },
     {
-      category: 'Programming Languages',
-      skills: ['JavaScript', 'Python'],
+      category: 'Integrations & Services',
+      skills: ['Firebase Auth', 'OTP Auth', 'Razorpay', 'JWT'],
     },
     {
-      category: 'Core CS Fundamentals',
-      skills: ['Data Structures', 'Algorithms', 'DBMS', 'Operating Systems', 'Computer Networks'],
+      category: 'Developer Tools',
+      skills: ['VS Code', 'Git', 'GitHub', 'Postman'],
     },
   ];
 
@@ -58,11 +58,11 @@ export function SkillsSection() {
         <div className="mt-16 p-8 bg-card border border-border rounded-xl">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold text-primary mb-2">2+</div>
+              <div className="text-4xl font-bold text-primary mb-2">1+</div>
               <div className="text-muted-foreground">Years Experience</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-primary mb-2">10+</div>
+              <div className="text-4xl font-bold text-primary mb-2">5+</div>
               <div className="text-muted-foreground">Projects Delivered</div>
             </div>
             <div>

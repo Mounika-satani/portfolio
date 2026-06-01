@@ -12,32 +12,18 @@ interface ExperienceItem {
 export function ExperienceSection() {
   const experiences: ExperienceItem[] = [
     {
-      title: 'Senior Developer',
-      company: 'Codegnan IT Solutions',
-      period: 'Jan 2026 – Present',
+      title: 'Full Stack Developer',
+      company: 'Weiteredge Technology Pvt. Ltd',
+      period: 'July 2025 – Current',
       description: [
-        'Architected and developed Form Builder Module using React, Redux, and SurveyJS, taking full ownership of end-to-end implementation including database design, API integration, and UI development',
-        'Built custom internal form platform replacing Google Forms, enabling secure surveys, feedback collection, and organizational data tracking with role-based access control',
-        'Designed and implemented role-based access interfaces with backend integration, improving permission control and operational efficiency by 40%',
-        'Developed Attendance Module with full-stack implementation, improving tracking accuracy and reducing manual effort by 35%',
-        'Created reusable component library and RESTful APIs, reducing development time by 30% across teams',
-        'Collaborated with product and backend teams using agile methodologies and GitHub workflows',
+        'Developed LEADITOAI, a full-stack lead generation platform using React.js and React Native, designing RESTful APIs for authentication and workflows',
+        'Implemented secure Firebase OTP Authentication, JWT-based authorization, and Razorpay Payment Gateway integration for seamless user onboarding and payments',
+        'Built THELAUNDRYGUYZ laundry management platform, managing PostgreSQL database operations with core CRUD functionalities and real-time synchronization',
+        'Contributed to Greensip, a government-scale smart waste management application, enhancing cross-platform mobile interfaces and implementing barcode-based rewards',
+        'Integrated REST APIs and Firebase Authentication for real-time data updates and user interactions across multiple production applications',
+        'Successfully managed mobile application deployments to the Google Play Store, ensuring production-ready delivery and testing',
       ],
-      technologies: ['React.js', 'Redux', 'SurveyJS', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
-    },
-    {
-      title: 'Senior Developer (Full-Stack)',
-      company: 'MakeSkillled',
-      period: 'Oct 2023 – Dec 2025',
-      description: [
-        'Developed end-to-end features for React-based hackathon platform, including frontend UI, backend APIs, and database integration',
-        'Built scalable backend APIs for LMS using Node.js and Express.js with secure authentication, improving system reliability by 45%',
-        'Designed and deployed cloud infrastructure using AWS services (S3, DynamoDB, EC2), reducing operational costs by 25%',
-        'Delivered multiple full-stack MERN applications with focus on security, scalability, and maintainability',
-        'Optimized database queries and API performance, reducing response time by 40%',
-        'Implemented caching strategies improving query performance by 50%',
-      ],
-      technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'AWS S3', 'AWS EC2', 'AWS DynamoDB', 'AWS IAM'],
+      technologies: ['React Native', 'React.js', 'Node.js', 'PostgreSQL', 'Firebase', 'Razorpay', 'JWT'],
     },
   ];
 
